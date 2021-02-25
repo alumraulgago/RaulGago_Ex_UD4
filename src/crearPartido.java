@@ -2,20 +2,30 @@
 import java.awt.event.KeyEvent;
 
 
-
+/**
+ * 
+ * @author Raúl Gago Gómez
+ */
 public class crearPartido extends javax.swing.JFrame
 {
    
-    
+    /**
+     * 
+     */
     private Apuesta v;
     
-   
+    /**
+     * 
+     */
     public crearPartido() 
     {
         initComponents();
     }
 
-   
+    /**
+     * 
+     * @param ventana 
+     */
     public crearPartido(Apuesta ventana) 
     {
         initComponents();
@@ -69,18 +79,28 @@ public class crearPartido extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    /**
+     * 
+     * @param p 
+     */
     public void partidoNuevo(String p)
     {
         v.agregarPartido(p);
         tPartido.setText("");
         tPartido.requestFocus();
     }
-    
+    /**
+     * 
+     * @param evt 
+     */
     private void bAgregarPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAgregarPartidoActionPerformed
         partidoNuevo(tPartido.getText());
     }//GEN-LAST:event_bAgregarPartidoActionPerformed
-
+    /**
+     * 
+     * @param evt 
+     */
     private void tPartidoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tPartidoKeyPressed
         if( evt.getKeyCode() == KeyEvent.VK_ENTER )
         {
@@ -88,7 +108,10 @@ public class crearPartido extends javax.swing.JFrame
         }
     }//GEN-LAST:event_tPartidoKeyPressed
 
-    
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
